@@ -1,0 +1,19 @@
+name: SVTimeIsMoney
+main: fr.zankia.SVTimeIsMoney.SVTIM
+version: 1.1
+description: While you play, you earn money
+author: zankia
+depend: [Vault, Essentials]
+
+commands:
+  svtimeismoney:
+    description: Plugin management command.
+    aliases: [svtim]
+    usage: /svtimeismoney reload
+
+permissions:
+  svtimeismoney.*:
+    children:
+      svtimeismoney.admin: true
+  svtimeismoney.admin:
+    description: Allows managing the plugin.
