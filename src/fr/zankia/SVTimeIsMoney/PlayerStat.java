@@ -18,7 +18,7 @@ public class PlayerStat {
 			afk.put(p, System.currentTimeMillis());
 	}
 	public void afkEnd(Player p) {
-		if(playerList.containsKey(p))
+		if(playerList.containsKey(p) && afk.containsKey(p))
 			playerList.put(p, playerList.get(p) - (System.currentTimeMillis() - afk.remove(p)));
 	}
 
