@@ -10,12 +10,10 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import net.ess3.api.events.AfkStatusChangeEvent;
 
 public class SVTIMListener implements Listener {
-	private SVTIM plugin;
 	private PlayerStat stat;
 	private double moneyPerHour;
 	
 	public SVTIMListener(SVTIM plugin) {
-		this.plugin = plugin;
 		this.stat = new PlayerStat();
 		this.moneyPerHour = plugin.getConfig().getDouble("moneyPerHour");
 	}
