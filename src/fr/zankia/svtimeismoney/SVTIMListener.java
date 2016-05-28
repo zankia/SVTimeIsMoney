@@ -1,4 +1,4 @@
-package fr.zankia.SVTimeIsMoney;
+package fr.zankia.svtimeismoney;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

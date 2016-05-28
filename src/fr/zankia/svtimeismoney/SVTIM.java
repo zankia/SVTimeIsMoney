@@ -1,4 +1,4 @@
- package fr.zankia.SVTimeIsMoney;
+ package fr.zankia.svtimeismoney;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
