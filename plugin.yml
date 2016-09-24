@@ -1,6 +1,6 @@
 name: SVTimeIsMoney
 main: fr.zankia.SVTimeIsMoney.SVTIM
-version: 1.3
+version: 1.4
 description: While you play, you earn money
 author: zankia
 depend: [Vault, Essentials]

@@ -22,9 +22,12 @@ public class SVTIMListener implements Listener {
 	@EventHandler (priority = EventPriority.NORMAL)
 	public void onQuit(PlayerQuitEvent e) {
 		Player player = e.getPlayer();
+		giveMoney(player);
+	}
+
+	public void giveMoney(Player player) {
 		double hours = (double) stat.removePlayer(player) / (1000 * 60 * 60);
 		VaultLink.economy.depositPlayer(player, hours * moneyPerHour);
-		
 	}
 
 	@EventHandler (priority = EventPriority.NORMAL)
